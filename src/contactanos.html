@@ -12,7 +12,7 @@
         <link
             rel="stylesheet"
             type="text/css"
-            href="./assets/styles/main.scss"
+            href="./assets/styles/contactanos.scss"
         />
 
         <!-- do not remove this line! -->
@@ -21,23 +21,32 @@
     <body>
         <include src="./views/menu.html"></include>
 
-        <form name="contact" method="POST" data-netlify="true">
-            <p>
-                <label>Nombre: <input type="text" name="name" /></label>
-            </p>
-            <p>
-                <label>Email: <input type="email" name="email" /></label>
-            </p>
-            <p>
-                <label>Asunto: <input type="text" name="name" /></label>
-            </p>
-            <p>
-                <label>Mensaje: <textarea name="message"></textarea></label>
-            </p>
-            <p>
-                <button type="submit">Enviar</button>
-            </p>
-        </form>
+        <div class="contact">
+            <h1>Contáctanos</h1>
+            <form name="contact" method="POST" data-netlify="true">
+                <div class="mb-3">
+                    <label class="form-label">Nombre: </label>
+                    <input class="form-control" type="text" name="name" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Email: </label>
+                    <input class="form-control" type="email" name="email" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Asunto: </label>
+                    <input class="form-control" type="text" name="name" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Mensaje: </label>
+                    <textarea class="form-control" name="message"></textarea>
+                </div>
+
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+        </div>
 
         <include src="./views/footer.html"></include>
         <script type="module" src="./assets/scripts/main.js"></script>

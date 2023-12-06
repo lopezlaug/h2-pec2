@@ -1,0 +1,57 @@
+@import "variables";
+// @import "bootstrap/scss/bootstrap.scss";
+
+@import "layouts/general";
+@import "layouts/menu";
+@import "layouts/footer";
+
+.miembros {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+  }
+
+  .flex-container {
+    padding: 10px;
+    margin: 10px;
+
+    background-color: lightgrey;
+    color: black;
+
+    // container-type: normal;
+    // border: 0.5px solid black;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    // justify-content: flex-start;
+    // align-items: flex-end;
+    // align-content: space-between;
+
+    .flex-box {
+      background-color: white;
+      // border: 1px solid black;
+      text-align: center;
+
+      flex: calc(33.33% - 20px);
+      box-sizing: border-box;
+      padding: 15px;
+
+      // flex: 1 0 25%;
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+// @container (max-width: 700px) {
+//   .flex-box {
+//     opacity: 0;
+//   }
+// }

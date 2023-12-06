@@ -1,12 +1,13 @@
 .menu {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   font-family: $font-family-sans-serif-bold;
-  font-size: 6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 0.8px solid $dark-blue;
+  margin-bottom: 25px;
+  margin-top: 10px;
 
   .logo {
     display: flex;
@@ -14,7 +15,7 @@
     align-items: center;
 
     img {
-      max-width: 35px;
+      max-width: 65px;
     }
     a {
       text-decoration: none;
@@ -33,7 +34,8 @@
       color: $dark-blue;
       font-family: $font-family-sans-serif;
       font-weight: 900;
-      margin: 6px;
+      font-size: 14px;
+      margin: 14px;
     }
 
     a:hover {
@@ -42,6 +44,22 @@
 
     a:active {
       color: $yellow-green;
+    }
+  }
+}
+
+@media (max-width: $layout-breakpoint-mobile) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    .navigation {
+      a {
+        margin: 6px;
+        font-size: 10px;
+      }
     }
   }
 }

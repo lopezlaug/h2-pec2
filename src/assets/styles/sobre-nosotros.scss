@@ -1,0 +1,94 @@
+@import "variables";
+
+@import "bootstrap/scss/bootstrap.scss";
+
+@import "layouts/general";
+@import "layouts/menu";
+@import "layouts/footer";
+
+.sobre {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  .hero-nosotros {
+    text-align: center;
+    line-height: 12px;
+    height: 350px;
+    background-color: rgba(240, 255, 255, 0.349);
+    background-image: url("../images/player-dark.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+
+  .columns {
+    display: flex;
+    margin: 80px;
+  }
+
+  .bigtext {
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .list {
+    border-top: 0.8px solid $dark-blue;
+    border-bottom: 0.8px solid $dark-blue;
+    margin: 80px;
+
+    li {
+      font-weight: bold;
+    }
+  }
+
+  blockquote {
+    margin: 80px;
+
+    p {
+      font-weight: bolder;
+      font-size: 22px;
+    }
+  }
+
+  .section {
+    .p {
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+  }
+
+  .fig,
+  figcaption {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  button {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: $layout-breakpoint-mobile) {
+  .sobre {
+    margin-left: 10px;
+
+    .columns {
+      display: block;
+    }
+
+    .fig {
+      img {
+        max-width: 300px;
+      }
+    }
+  }
+}
